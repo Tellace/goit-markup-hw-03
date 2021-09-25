@@ -15,6 +15,21 @@
   --our-team-color: #f5f4fa;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-title-color);
@@ -22,11 +37,30 @@ body {
   color: var(--header-text-color);
 }
 
-.container{
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 0 15px:
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid tomato;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+.header-contact {
+  margin-left: auto;
+}
+
 .header-logo {
   width: 145px;
   height: 31px;
@@ -44,9 +78,19 @@ body {
 
   color: var(--accent-color);
   text-decoration: none;
+  margin-right: 93px;
 }
 .studio {
   color: black;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .link {
@@ -77,6 +121,7 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--header-link-color);
+  margin-right: 50px;
 }
 
 .header-contacts-link:hover,
@@ -88,6 +133,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-title-color);
   background-color: var(--background-color);
+  outline: 2px solid tomato;
 }
 
 .btn {
@@ -112,16 +158,19 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--header-text-color);
+  outline: 2px solid tomato;
 }
 .advantage-description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--header-link-color);
+  outline: 2px solid tomato;
 }
 .advantage {
   text-decoration: none;
   list-style: none;
+  outline: 2px solid tomato;
 }
 .photo {
   font-weight: bold;
@@ -130,13 +179,16 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
+  outline: 2px solid tomato;
 }
 .examples {
   list-style: none;
+  outline: 2px solid tomato;
 }
 .we {
   width: 1600px;
   background: var(--our-team-color);
+  outline: 2px solid tomato;
 }
 .our-team {
   font-weight: bold;
@@ -145,9 +197,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
+  outline: 2px solid tomato;
 }
 .people {
   list-style: none;
+  outline: 2px solid tomato;
 }
 
 .basement {
@@ -216,6 +270,7 @@ body {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  outline: 2px solid tomato;
 }
 .description {
   font-weight: bold;
@@ -226,6 +281,7 @@ body {
   letter-spacing: 0.06em;
 
   color: var(--secondary-title-color);
+  outline: 2px solid tomato;
 }
 
 .type {
