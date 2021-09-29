@@ -235,8 +235,8 @@ body {
   flex-basis: calc(100% / 3 - 90px);
 }
 
-.example-item:nth-child(0) {
-  margin-left: 30px;
+.example-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .we {
